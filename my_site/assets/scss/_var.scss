@@ -1,0 +1,13 @@
+@forward "helpers"; // Makes helpers available in each component when only _var file is loaded.
+
+@use "helpers" as *; // Use helpers file in thie _var file. Forward does not do that.
+
+// Sizes
+
+// Colors
+$color-primary: #FAA31A;
+$color-primary-light: #FFE7C1;
+$color-primary-extra-light: #FFF4E2;
+$color-primary-border: #FDD99F;
+$color-border: #e8e8e8;
+$color-text: #323232;

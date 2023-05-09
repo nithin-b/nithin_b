@@ -1,0 +1,51 @@
+@use "reset";
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;300;400;500;600&display=swap");
+
+body {
+  font-family: "Noto Sans", "Helvetica Neue", Helvetica, "PingFang SC",
+    "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif;
+  color: $color-text;
+  padding: 0px;
+  margin: 0px;
+}
+
+.container {
+  width: 95%;
+  margin: 0 auto;
+  max-width: rem(1368);
+
+  @include mobile {
+    width: 90%;
+  }
+}
+
+button {
+  font-family: inherit !important;
+}
+
+.page {
+  padding-top: rem(20);
+  padding-bottom: rem(40);
+}
+
+.page__title {
+  font-size: rem(26);
+  font-weight: 400;
+  margin-bottom: rem(24);
+
+  @include mobile {
+    font-size: rem(20);
+    margin-bottom: rem(16);
+  }
+}
+
+.el-message {
+  @include mobile {
+    width: 82%;
+
+    .el-message__content {
+      line-height: 1.1;
+    }
+  }
+}
