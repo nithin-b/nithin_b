@@ -1,13 +1,7 @@
 <template>
   <div class="main_page">
     <el-row :gutter="10">
-      <el-col :span="8" style="margin-top: 10rem">
-        <div>
-          <label>File Upload</label>
-          <input type="file" @change="onFileChage" />
-          <span><button>Upload</button></span>
-        </div>
-      </el-col>
+      <el-col :span="8" style="margin-top: 10rem"> </el-col>
       <el-col :span="8">
         <el-card class="box-card">
           <el-form
@@ -92,11 +86,6 @@ async function registerUser() {
     }
   }
 }
-const onFileChage = async (e: any) => {
-  let files = e.target.files || e.dataTransfer.files;
-  if (!files.length) return;
-  const { snapshot, downLoadUrl, metadata }: any = await upoadFile(files[0]);
-};
 </script>
 
 <style>
